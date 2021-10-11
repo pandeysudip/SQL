@@ -24,25 +24,27 @@ CREATE TABLE employees(
             first_name VARCHAR(20),
             last_name VARCHAR(20),
             sex CHAR,
-            hire_date DATE
+            hire_date DATE,
             FOREIGN KEY(emp_title_id) REFERENCES titles(title_id)
 );
 CREATE TABLE dept_emp(
             emp_no INT REFERENCES employees(emp_no),
             dept_no CHAR(10) REFERENCES departments(dept_no),
             PRIMARY KEY(emp_no, dept_no)
-            
+
 );
 
 CREATE TABLE dept_manager(
             dept_no CHAR(10) REFERENCES departments(dept_no),
             emp_no INT  REFERENCES employees(emp_no)
+            PRIMARY KEY(dept_no, emp_no)
 );
 
 
 CREATE TABLE salaries(
             emp_no INT REFERENCES employees(emp_no),
             salary INT
+            PRIMARY KEY(emp_no, salary)
 );
 
 
