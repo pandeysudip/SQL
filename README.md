@@ -39,11 +39,11 @@ Performed the following:
 
 ## Sql-Alchemy
 To generate a visualization of the data
-1. Imported the SQL database into Pandas. 
+1. Imported the SQL database into Pandas using sql-alchemy.
 
-2. Create a histogram to visualize the most common salary ranges for employees.
+2. Created a histogram to visualize the most common salary ranges for employees.
 
-3. Create a bar chart of average salary by title.
+3. Created a bar chart of average salary by title.
 
 
 
